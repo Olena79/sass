@@ -1,0 +1,31 @@
+<div class="page">
+  <div class="section">
+    <div class="section__content">
+
+      {{#with header}}
+
+      <header class="header">
+
+        <div class="header__block">
+          <img src="/svg/apple.svg" alt="Apple" claas="header__icon">
+
+          <nav class="header__block">
+            {{#each links}}
+            <a href="{{url}}" class="header__link">{{text}}</a>
+            {{/each}}
+          </nav>
+        </div>
+
+
+        <div class="header__block">
+          <img src="/svg/search.svg" alt="Search" claas="header__icon">
+          <img src="/svg/profile.svg" alt="Profile" claas="header__icon">
+        </div>
+
+      </header>
+
+      {{/with}}
+
+    </div>
+  </div>
+</div>

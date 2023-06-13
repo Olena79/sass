@@ -1,6 +1,9 @@
 $colorMap: (
     background: #F5F5F7,
     backgroundDark: #454545,
+    whiteLight: #dadada,
+    fontDark: #1d1d1f,
+    primary: #0066CC,
 );
 
 @function color ($key) {
@@ -8,11 +11,12 @@ $colorMap: (
 }
 
 $sizeMap: (
+    small: 12px,
     default: 16px,
 );
 
 @function size ($key: 'default') {
-    @return map-get($colorMap, $key);
+    @return map-get($sizeMap, $key);
 }
 
 $screenMap: (
